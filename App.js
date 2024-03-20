@@ -3,8 +3,10 @@ import {
   ActivityIndicator,
   Image,
   ImageBackground,
+  Pressable,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import {
@@ -141,7 +143,33 @@ export default function App() {
             </Text>
           </View>
 
-          
+          <TouchableOpacity
+            onPress={() => {}}
+            style={{
+              flexDirection: "row",
+              height: 40,
+              width: 115,
+              backgroundColor: "#fff",
+              borderRadius: 30,
+              marginTop: 50,
+              justifyContent: "space-between",
+              paddingLeft: 16,
+              paddingRight: 4,
+              alignItems: "center",
+            }}
+          >
+            <Text
+              style={{
+                fontFamily: "Inter-Bold",
+                fontSize: 12,
+                color: "#000",
+                letterSpacing: 3,
+              }}
+            >
+              MORE
+            </Text>
+            <Image source={require("./assets/arrow-down.png")} />
+          </TouchableOpacity>
         </View>
       </View>
     </ImageBackground>
